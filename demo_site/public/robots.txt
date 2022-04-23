@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://sadorus.github.io/percy-luczniczqa/sitemap.xml
