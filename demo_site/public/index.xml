@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PercyLuczniczQA</title>
+    <link>https://sadorus.github.io/percy-luczniczqa/</link>
+    <description>Recent content on PercyLuczniczQA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 09 Apr 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://sadorus.github.io/percy-luczniczqa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Post</title>
+      <link>https://sadorus.github.io/percy-luczniczqa/posts/test/</link>
+      <pubDate>Sat, 09 Apr 2022 11:30:03 +0000</pubDate>
+      
+      <guid>https://sadorus.github.io/percy-luczniczqa/posts/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
