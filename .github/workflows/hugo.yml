@@ -24,6 +24,7 @@ jobs:
           extended: true
 
       - name: Build
+        working-directory: demo_site
         run: hugo --minify
 
       - name: Deploy
