@@ -1,4 +1,4 @@
-baseURL: "https://sadorus.github.io/percy-luczniczqa/"
+baseURL: "https://percy-luczniczqa.netlify.app/"
 title: PercyLuczniczQA
 paginate: 5
 theme: PaperMod
