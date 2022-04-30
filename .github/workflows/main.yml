@@ -45,6 +45,8 @@ jobs:
         run: hugo --minify
         
       - name: Percy Test
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
         run: npx percy exec -- cypress run
         
       - name: Deploy to Netlify
