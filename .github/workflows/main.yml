@@ -42,15 +42,14 @@ jobs:
         working-directory: demo_site
         run: hugo --minify
         
-      - name: Hugo Server
+      - name: Hugo Server and Percy
         working-directory: demo_site
-        run: hugo server -D &
-        wait-on: 'http://localhost:1313'
-        
-      - name: Percy Test
+        run: |
+         hugo server -D &
+         npx percy exec -- cypress run
+        wait-on: 'http://localhost:1313'    
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-        run: npx percy exec -- cypress run
         
       - name: Deploy to Netlify
         env:
