@@ -45,7 +45,7 @@ jobs:
         run: hugo --minify
         
       - name: Percy Test
-        run: npx @percy/cli snapshot
+        run: npx percy exec -- cypress run
         
       - name: Deploy to Netlify
         env:
