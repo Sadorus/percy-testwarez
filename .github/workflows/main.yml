@@ -42,7 +42,7 @@ jobs:
         working-directory: demo_site
         run: hugo --minify
         
-      - name: Hugo Server and Percy
+      - name: Hugo Server and Percy Tests
         working-directory: demo_site
         run: |
          hugo server -D &
