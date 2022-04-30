@@ -45,6 +45,7 @@ jobs:
       - name: Hugo Server
         working-directory: demo_site
         run: hugo server -D
+        wait-on: 'http://localhost:1313'
         
       - name: Percy Test
         env:
