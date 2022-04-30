@@ -42,6 +42,10 @@ jobs:
         working-directory: demo_site
         run: hugo --minify
         
+      - name: Hugo Server
+        working-directory: demo_site
+        run: hugo server -D
+        
       - name: Percy Test
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
