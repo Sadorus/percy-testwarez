@@ -42,11 +42,12 @@ jobs:
         working-directory: demo_site
         run: hugo --minify
         
-      - name: Hugo Server and Percy Tests
+      - name: Hugo Server
         working-directory: demo_site
-        run: |
-         hugo server -D &
-         npx percy exec -- cypress run 
+        run: hugo server -D &
+        
+      - name: Percy Tests
+        run: npx percy exec -- cypress run 
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
         
