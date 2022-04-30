@@ -46,8 +46,7 @@ jobs:
         working-directory: demo_site
         run: |
          hugo server -D &
-         npx percy exec -- cypress run
-        wait-on: 'http://localhost:1313'    
+         npx percy exec -- cypress run 
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
         
