@@ -12,3 +12,10 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+
+# Dependencies
+/node_modules
+
+# Cypress test run output
+/cypress/videos
+/cypress/screenshots
