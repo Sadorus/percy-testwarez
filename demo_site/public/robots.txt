@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://percy-luczniczqa.netlify.app/sitemap.xml
