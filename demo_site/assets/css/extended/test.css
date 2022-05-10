@@ -1,6 +1,6 @@
 .my-post-title {
-        margin-bottom: 14px;
-        font-size: 45px;
+        margin-bottom: 2px;
+        font-size: 22px;
 }
 
-.post-add { background: none !important; }
+.post-add { background: #ffccdd !important; }
