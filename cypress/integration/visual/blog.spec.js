@@ -1,25 +1,24 @@
-describe('PercyLuczniczQA', function() {
-    before(function() {
-      // Load our app before starting each test case
+describe('PercyLuczniczQA', () => {
+    before(() => {
       cy.visit('/')
     })
   
-    it('Loads the Blog Content', function() {
+    it('Loads the Blog Content',() => {
       cy.get('.main').should('exist')
       cy.percySnapshot('Homepage')
     })
 
-    it('Move to the second page', function() {
+    it('Move to the second page',() => {
       cy.get('a.next').click()
       cy.percySnapshot('Blog Page')
     })
 
-    it('Lorem Ipsum Post Content', function() {
+    it('Lorem Ipsum Post Content',() => {
       cy.visit('/posts/lorem-ipsum/')
       cy.percySnapshot('Lorem Ipsum Blog Post')
     })
 
-    it('Example Blog Post', function() {
+    it('Example Blog Post',() => {
       cy.visit('/posts/cool-post/')
       cy.percySnapshot('Styling')
     })
