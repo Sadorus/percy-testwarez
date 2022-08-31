@@ -22,7 +22,7 @@
     "wait-on": "^6.0.1"
   },
   "devDependencies": {
-    "@percy/cli": "^1.1.0",
-    "@percy/cypress": "^3.1.1"
+    "@percy/cli": "^1.10.0",
+    "@percy/cypress": "^3.1.2"
   }
 }
