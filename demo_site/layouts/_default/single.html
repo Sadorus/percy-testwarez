@@ -3,10 +3,10 @@
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
-    <h2 class="my-post-title">
+    <p class="my-post-title">
       {{ .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h2>
+    </p>
     {{- if .Description }}
     <div class="post-description">
       {{ .Description }}
@@ -53,6 +53,10 @@
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
   {{- end }}
+    <h2 class="my-post-title">
+      {{ .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h2>
 </article>
 
 {{- end }}{{/* end main */}}
