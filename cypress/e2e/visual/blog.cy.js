@@ -1,4 +1,4 @@
-describe('PercyLuczniczQA', () => {
+describe('Percy Demo on Hugo blog', () => {
 
     it('Loads the Blog Content',() => {
       cy.visit('/')
@@ -9,13 +9,13 @@ describe('PercyLuczniczQA', () => {
     it('Loads the Blog Content and make a snapshot of navigation',() => {
       cy.visit('/')
       cy.get('.main').should('exist')
-      cy.percySnapshot('Navigation', { widths: [768, 992, 1200] , scope: 'nav.nav'})
+      cy.percySnapshot('Navigation', { widths: [768, 992, 1200] , scope: `nav.nav`})
     })
 
     it('Move to the second page',() => {
       cy.visit('/')
       cy.get('a.next').click()
-      cy.percySnapshot('Blog Page', { widths: [768, 992, 1200] , percyCSS: `iframe { display: none; }`} )
+      cy.percySnapshot('Blog Page', { widths: [768, 992, 1200] , percyCSS: `footer.footer { display: none; }`} )
     })
 
     it('Lorem Ipsum Post Content',() => {
