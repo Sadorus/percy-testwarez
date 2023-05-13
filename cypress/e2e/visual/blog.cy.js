@@ -5,7 +5,12 @@ describe('PercyLuczniczQA', () => {
   
     it('Loads the Blog Content',() => {
       cy.get('.main').should('exist')
-      cy.percySnapshot('Homepage')
+      cy.percySnapshot('Homepage', { widths: [768, 992, 1200] })
+    })
+
+    it('Loads the Blog Content and make a snapshot of navigation',() => {
+      cy.get('.main').should('exist')
+      cy.percySnapshot('Navigation', { widths: [768, 992, 1200] }, {percyCSS: 'nav.nav'})
     })
 
     it('Move to the second page',() => {
