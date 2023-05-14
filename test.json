@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "snapshot": {
+    "widths": [
+      375,
+      1280
+    ],
+    "min-height": 1024,
+    "percy-css": "iframe {\n  display: none;\n}\n"
+  },
+  "static": {
+    "base-url": "/blog/",
+    "files": "**/*.html",
+    "ignore": "**/*.htm"
+  },
+  "discovery": {
+    "allowed-hostnames": [
+      "cdn.example.com"
+    ],
+    "authorization": {
+      "username": "user",
+      "password": "pass"
+    },
+    "request-headers": {
+      "Authorization": "Basic dXNlcm5hbWU6cGFzc3dvcmQ="
+    },
+    "network-idle-timeout": 150,
+    "disable-cache": true,
+    "concurrency": 15,
+    "launch-options": {
+      "executable": "/path/to/chromium/executable",
+      "headless": true,
+      "args": [],
+      "timeout": 30000
+    }
+  },
+  "upload": {
+    "files": "**/*.{png,jpg,jpeg}",
+    "ignore": ""
+  }
+}
