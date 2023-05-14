@@ -20,11 +20,11 @@ describe('Percy Demo on Hugo blog', () => {
 
     it('Lorem Ipsum Post Content',() => {
       cy.visit('/posts/lorem-ipsum/')
-      cy.percySnapshot('Lorem Ipsum Blog Post')
+      cy.percySnapshot('Lorem Ipsum Blog Post', { widths: [768, 992, 1200], minHeight: 2000 })
     })
 
     it('Example Blog Post',() => {
-      cy.visit('/posts/cool-post/')
+      cy.visit('/posts/cool-post/', { widths: [768, 992, 1200]})
       cy.percySnapshot('Styling')
     })
   })
