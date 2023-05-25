@@ -1,6 +1,7 @@
 .my-post-title {
         margin-bottom: 14px;
-        font-size: 45px;
+        font-size: 32px;
+        color: darkorange;
 }
 
 .post-add { background: none !important; }
